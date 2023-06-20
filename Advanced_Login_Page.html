@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/809556e1a2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            flex: 0 0 120px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .input-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-container input,
+        .input-container textarea,
+        .input-container select {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #555;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .input-container i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .input-container input::placeholder,
+        .input-container textarea::placeholder,
+        .input-container select::placeholder {
+            color: #999;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .input-container input:focus,
+        .input-container textarea:focus,
+        .input-container select:focus {
+            outline: none;
+            border-color: #0066ff;
+        }
+
+        .form-group .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: green;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0052cc;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label for="username">First Name</label>
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="First Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="userlname">Last Name</label>
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="userlname" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="E-mail Address">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mob">Phone #</label>
+                <div class="input-container">
+                    <i class="fas fa-phone"></i>
+                    <input type="number" id="mob" minlength="10" maxlength="10" placeholder="(845)555-1212">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mob">Address</label>
+                <div class="input-container">
+                    <i class="fas fa-home"></i>
+                    <input type="text" id="add" placeholder="Address">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <div class="input-container">
+                    <i class="fas fa-home"></i>
+                    <input type="text" id="city" placeholder="City">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State</label>
+                <div class="input-container">
+                    <i class="fas fa-home"></i>
+                    <select id="state" placeholder="Please select your state">
+                        <option value="" selected disabled>Please select your state</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <!-- Add more options here -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Do you have hosting</label>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="hosting" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="hosting" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Project Description</label>
+                <div class="input-container">
+                    <i class="fas fa-pencil-alt" style="top: 20px; left: 10px;"></i>
+                    <textarea name="description" id="description" cols="30" rows="10"
+                        placeholder="Project Description"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group" style="justify-content: center;">
+                <button class="btn" type="submit">Submit<i class="fa-solid fa-paper-plane"
+                        style="margin-left:10px"></i></button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
