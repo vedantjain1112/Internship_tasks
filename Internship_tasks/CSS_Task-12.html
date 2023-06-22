@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+
+        .login-container {
+            width: 500px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .remember label {
+            margin-bottom: 0;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .login-container .btnn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .account {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .account p,
+        .account a {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            margin-block: 10px 10px;
+            color: #555;
+        }
+
+        .remember input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .social-login button {
+            margin-bottom: 10px;
+        }
+
+        .cancel_fp {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .cancel_fp .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        span {
+            text-decoration: underline;
+            margin-left: 4px;
+        }
+
+        .logo img,
+        .btnn {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.mDv826UG65YB8vFcW1SB3QHaHa&pid=Api&P=0&h=180" alt="user_image">
+        </div>
+        <div class="login-container">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <div class="forgot-password">
+                <a href="#" target="_blank">Forgot <span>Password ?</span></a>
+            </div>
+            <button class="btnn">Login</button>
+
+            <div class="account">
+                <p>Don't have an account?</p>
+                <a href="#" target="_blank">Create one</a>
+            </div>
+            <div class="remember">
+                <input type="checkbox" id="remember" checked>
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="social-login">
+                <button class="btnn">Login with Google</button>
+                <button class="btnn">Login with Facebook</button>
+            </div>
+
+            <div class="cancel_fp">
+                <button class="btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

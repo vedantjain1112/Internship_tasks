@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #custom-table{
+            border: 2px solid black;
+        }
+
+        table td,
+        th {
+            width: fit-content;
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: left;
+            padding: 10px;
+            border-radius: 20px solid black;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        #custom-table th,
+        #custom-table td {
+            border-radius: 20px;
+        }
+
+        #custom-table,
+        th {
+            background-color: hsl(190, 79%, 55%);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="50%" id="custom-table">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1,
+        .container2,
+        .container3,
+        .container4,
+        .container5,
+        .container6,
+        .container7,
+        .container8 {
+            margin-bottom: 10px;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        .container11{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" style="padding: 20px;">
+        <h1 style="color: blue;">Registration Form</h1>
+        <table>
+            <tr>
+                <td>
+                    <div class="container1">
+                        <label for="">First Name :</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container1">
+                        <input type="text" placeholder="Enter your First Name">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container2">
+                        <label for="">Last Name :</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container2">
+                        <input type="text" placeholder="Enter your Last Name">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container3">
+                        <label for="">Email :</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container3">
+                        <input type="mail" placeholder="Enter your mail">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container3">
+                        <label for="">Gender :</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container3">
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container4">
+                        <label for="">Age :</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container4">
+                        <input type="number">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container5">
+                        <label for="">Phone Number :</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container5">
+                        <input type="number">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container6">
+                        <label for="">Address :</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container6">
+                        <textarea cols="50" rows="10"></textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container7">
+                        <label>Country :</label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container7">
+                        <select id="countries" name="country">
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="India">India</option>
+                            <option value="Germany">Germany</option>
+                            <option value="London">London</option>
+                            <option value="America">America</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container8">
+                        <label for="">Languages Known : </label>
+                    </div>
+                </td>
+                <td>
+                    <div class="container8">
+                        <input type="checkbox" name="languages" value="English"> English
+                        <input type="checkbox" name="languages" value="Hindi"> Hindi
+                        <input type="checkbox" name="languages" value="Telugu"> Telugu
+                        <input type="checkbox" name="languages" value="Kannada"> Kannada
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="container9" style="padding-top: 10px;">
+                        <input type="checkbox" checked> <label for="">Hereby I declare all the given details are
+                            true</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="container10" style="padding-top: 10px;">
+                        <p>Login to <a href="#"><span>Ethenus</span></a> Website
+                        <p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="container11">
+            <button>Register</button>
+        </div>
+    </form>
+</body>
+
+</html>

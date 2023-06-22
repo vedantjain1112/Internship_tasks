@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .containerr {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        label {
+            width: 150px;
+            margin-right: 10px;
+            text-align: right;
+        }
+
+        input,
+        select {
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #85f585;
+            color: black;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 100px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="myForm">
+            <div class="containerr">
+                <label for="name">Name : </label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="containerr">
+                <label for="email">Email : </label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="containerr">
+                <label for="website">Website : </label>
+                <input type="text" id="website" required>
+            </div>
+
+            <div class="containerr">
+                <label for="message">Message : </label>
+                <textarea id="message" cols="30" rows="10" required></textarea>
+            </div>
+
+            <div class="containerr">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

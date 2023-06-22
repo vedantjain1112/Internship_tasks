@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            padding: 20px;
+            background: linear-gradient(135deg, #FED373 0%, #F15245 100%);
+        }
+
+        .container1,
+        .container2,
+        .container3,
+        .container4,
+        .container5,
+        .container6,
+        .container7,
+        .container8,
+        .container9,
+        .container10 {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="mail"],
+        input[type="number"],
+        textarea,
+        select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 250px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1 style="color: blue;">Registration Form</h1>
+        <div class="container1">
+            <label for="">First Name:</label>
+            <input type="text" placeholder="Enter your First Name">
+        </div>
+
+        <div class="container2">
+            <label for="">Last Name:</label>
+            <input type="text" placeholder="Enter your Last Name">
+        </div>
+
+        <div class="container3">
+            <label for="">Email:</label>
+            <input type="mail" placeholder="Enter your mail">
+        </div>
+
+        <div class="container3">
+            <label for="">Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </div>
+
+        <div class="container4">
+            <label for="">Age:</label>
+            <input type="number">
+        </div>
+
+        <div class="container5">
+            <label for="">Phone Number:</label>
+            <input type="number">
+        </div>
+
+        <div class="container6">
+            <label for="">Address:</label>
+            <textarea cols="50" rows="10"></textarea>
+        </div>
+
+        <div class="container7">
+            <label>Country:</label>
+            <select id="countries" name="country">
+                <option value="" disabled selected>Select your country</option>
+                <option value="India">India</option>
+                <option value="Germany">Germany</option>
+                <option value="London">London</option>
+                <option value="America">America</option>
+                <option value="Africa">Africa</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+
+        <div class="container8">
+            <label for="">Languages Known:</label>
+            <input type="checkbox" name="languages" value="English"> English
+            <input type="checkbox" name="languages" value="Hindi"> Hindi
+            <input type="checkbox" name="languages" value="Telugu"> Telugu
+            <input type="checkbox" name="languages" value="Kannada"> Kannada
+        </div>
+
+        <div class="container9" style="padding-top: 10px;">
+            <input type="checkbox" checked>
+            <label for="">Hereby I declare all the given details are true</label>
+        </div>
+
+        <div class="container10" style="padding-top: 20px;">
+            <button>Register</button>
+        </div>
+    </form>
+</body>
+
+</html>

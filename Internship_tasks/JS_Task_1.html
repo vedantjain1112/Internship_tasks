@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn">Show Date</button>
+    </div>
+
+    <div class="container">
+        <button class="btn1">Show Time</button>
+    </div>
+
+    <script>
+        let dateButton = document.querySelector('.btn');
+        let timeButton = document.querySelector('.btn1');
+
+        dateButton.addEventListener('click', showDate);
+        timeButton.addEventListener('click', showTime);
+
+        function showDate() {
+            let currentDate = new Date();
+            let dateElement = document.createElement('p');
+            dateElement.textContent = 'Current Date: ' + currentDate.toDateString();
+            document.body.appendChild(dateElement);
+        }
+
+        function showTime() {
+            let currentTime = new Date();
+            let options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'long' };
+            let currentISTTime = currentTime.toLocaleString('en-IN', options);
+            let timeElement = document.createElement('p');
+            timeElement.textContent = 'Current Time: ' + currentISTTime;
+            document.body.appendChild(timeElement);
+        }
+
+
+    </script>
+</body>
+
+</html>

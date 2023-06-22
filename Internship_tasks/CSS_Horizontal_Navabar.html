@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0 auto; 
+            padding: 0;
+            background-color: #48b9c5;
+            width: 200px;
+        }
+
+        ul li {
+            padding: 10px;
+            color: #5656f1;
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            background-color: darkgrey;
+        }
+
+        ul li.active {
+            background-color: #e7e73e;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li class="active">Home</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+        </ul>
+    </div>
+</body>
+
+</html>
